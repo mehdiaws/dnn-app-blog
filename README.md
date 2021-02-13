@@ -10,37 +10,10 @@ This application consists of 4 main components, separated into 4 folders:
 4. `frontend` - contains web application code. The web application connected to the deployment of `backend` folder
 
 # Prerequisite
-1. On the account you want to deploy, create a new case by going to [Support Center](https://console.aws.amazon.com/support/home?region=us-east-1#/) and click the orange "Create case" button
-    1. Select "Service limit increase" checkbox
-    2. Under "Case details" > "Limit type" > select SageMaker
-    3. Add 4 requests with the following parameters:
-        * Request 1
-            * Region: US East (Northern Virginia)
-            * Resource Type: SageMaker Training
-            * Limit: ml.c5.18xlarge instances
-            * New limit value: 5 
-        * Request 2
-            * Region: US East (Northern Virginia)
-            * Resource Type: SageMaker Training
-            * Limit: Number of Instances for a Training Job
-            * New limit value: 5
-        * Request 3
-            * Region: US East (Northern Virginia)
-            * Resource Type: SageMaker Hosting
-            * Limit: ml.t2.medium
-            * New limit value: 5
-        * Request 3
-            * Region: US East (Northern Virginia)
-            * Resource Type: SageMaker Hosting
-            * Limit: Number of Instances for an Endpoint
-            * New limit value: 5
-    4. In "Case description", enter "We have an application that train models and generate endpoints automatically from UI. The current limit is too low for usage."
-    5. In "Contact options", choose your preferred option
-    6. Click the orange "Submit" button
-2. Install Docker (tested on Docker Desktop version 2.1.0.5). This is required for SAM.
-3. Install SAM CLI in your local machine. The installation steps are in [this link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). If you have never used SAM before, it is recommended to go through "Tutorial: Deploying a Hello World Application" section. It should take about 10 minutes to finish. 
-4. Install Python version 3.7.6 
-5. Install NodeJS version 10.20.1 
+1. Install Docker (tested on Docker Desktop version 2.1.0.5). This is required for SAM.
+2. Install SAM CLI in your local machine. The installation steps are in [this link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). If you have never used SAM before, it is recommended to go through "Tutorial: Deploying a Hello World Application" section. It should take about 10 minutes to finish. 
+3. Install Python version 3.7.6 
+4. Install NodeJS version 10.20.1 
 
 
 # Deployment Steps
