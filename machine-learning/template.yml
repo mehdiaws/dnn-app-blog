@@ -28,7 +28,6 @@ Resources:
       InstanceType: ml.t3.medium
       NotebookInstanceName: 
         Fn::Sub: Notebook
-      DefaultCodeRepository: https://github.com/mehdiaws/dl.git
       RoleArn:
         Fn::GetAtt:
         - SagemakerExecutionRole
